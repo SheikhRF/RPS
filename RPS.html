@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <title> RPS </title>   
-     <script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title> RPS </title>
+
+        <script>
         async function x(choice){
             alert(choice)
             const response = await fetch("http://127.0.0.1:8000/rest/post", {
@@ -14,24 +19,27 @@
         }
         
 
-     </script>
+        </script>
     </head>
     <body>
-        <h1>
-            Welcome to rock paper scissors
+        <h1 class="title">
+            Welcome to Rock Paper Scissors
         </h1>
-        <div onclick="x('rock')">
-            <img src='rock.jpeg'>
-            </img>
-        </div>
-        <div onclick="x('paper')">
-            <img src='paper.jpeg'>
-            </img>
-        </div>
+        <div class="container">
+            <div class=""
+                <div onclick="x('rock')">
+                    <img src='rock.jpeg' alt="Rock">
+                    </img>
+                </div>
+                <div onclick="x('paper')">
+                    <img src='paper.jpeg' alt="Paper">
+                    </img>
+                </div>
 
-        <div onclick="x('scissors')">
-            <img src='scissors.jpeg'>
-            </img>
+                <div onclick="x('scissors')">
+                    <img src='scissors.jpeg' alt="Scissors">
+                    </img>
+                </div>
         </div>
         
 

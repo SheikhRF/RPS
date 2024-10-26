@@ -1,0 +1,71 @@
+/* General page styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:maroon;
+    outline-color: black;
+    outline-width: 1vh;
+    background-color: #f3f3f3;
+}
+
+.title {
+    font-size:72px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:maroon;
+    outline-color: black;
+    font: bold;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Space between each choice box */
+    align-items: center;
+    width: 100%;
+    max-width: 400px;  /* Limits the width of the container */
+}
+
+/* Choice box styling */
+.choice-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 30px; /* Rounded corners on all sides */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover effect */
+.choice-box:hover {
+    transform: scale(1.05);
+    background-color: #f0f8ff;
+}
+
+/* Add different colors for each choice */
+.choice-box.rock {
+    background-color: #ffebee;
+}
+
+.choice-box.paper {
+    background-color: #e3f2fd;
+}
+
+.choice-box.scissors {
+    background-color: #f3e5f5;
+}
+
+/* Image styling */
+.choice-box img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
